@@ -6,12 +6,11 @@ import CalentamientoGlobal from "./componentes/CalentamientoGlobal";
 import Ganaste from "./componentes/Ganaste";
 import Perdiste from "./componentes/Perdiste";
 import './App.css';
-import { AuthContext } from "./context/AuthContext";
+import { context } from "./context/AuthContext";
 
 function App() {
   return (
     <div className="App">
-      <AuthContext>
       <header className="App-header">
         <BrowserRouter>
           <Routes>
@@ -24,7 +23,6 @@ function App() {
           </Routes>
         </BrowserRouter>
       </header>
-    </AuthContext>
     </div>
   );
 }
