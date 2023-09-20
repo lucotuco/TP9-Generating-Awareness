@@ -1,0 +1,19 @@
+img{
+    width: 25rem;
+    padding-bottom: 2%;
+}
+.image-container {
+    display: flex;
+    flex-direction: column;
+}
+.image-container button {
+    /* Agregar estilos al botón si lo deseas */
+    margin-top: 10px; /* Puedes ajustar el margen superior según sea necesario */
+}
+.button-container {
+    display: grid;
+    grid-template-columns: repeat(2, auto); /* Dos columnas con ancho automático */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    gap: 10px; /* Espacio entre los botones */
+  }
+  
