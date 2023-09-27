@@ -40,12 +40,7 @@ function List() {
 
     return (
         <> 
-        {/* Botones de inicio de sesión y cierre de sesión */}
-      {user ? (
-        <Button onClick={logout}>Cerrar sesión</Button>
-      ) : (
-        <Button onClick={() => login({ username: 'nombre_de_usuario' })}>Iniciar sesión</Button>
-      )}
+        
             <Modal show={showModal} onHide={handleCloseModal}>
                 <Modal.Header closeButton>
                     <Modal.Title>{modalInfo[modalId].title}</Modal.Title>

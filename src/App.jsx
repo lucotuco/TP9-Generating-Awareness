@@ -6,12 +6,13 @@ import CalentamientoGlobal from "./componentes/CalentamientoGlobal";
 import Ganaste from "./componentes/Ganaste";
 import Perdiste from "./componentes/Perdiste";
 import './App.css';
-import { context } from "./context/AuthContext";
+import Login from "./componentes/LogIn";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Login/>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<List />}></Route>

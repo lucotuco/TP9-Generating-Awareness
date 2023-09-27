@@ -1,21 +1,25 @@
+// AuthContext.js
 import React, { createContext, useContext, useState } from 'react';
 
 const AuthContext = createContext();
 
-export const useAuth = () => {
-  return useContext(AuthContext);
-};
+export const useAuth = () => useContext(AuthContext);
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
 
-  const login = (userData) => {
-    // Lógica de inicio de sesión, por ejemplo, guardar el usuario en el estado.
-    setUser(userData);
+  const login = (email, password) => {
+    // Simulamos una autenticación exitosa aquí.
+    // Debes implementar la lógica real de autenticación.
+    if (email === 'usuario@example.com' && password === 'contraseña') {
+      setUser({ email });
+      return true; // Autenticación exitosa
+    } else {
+      return false; // Autenticación fallida
+    }
   };
 
   const logout = () => {
-    // Lógica de cierre de sesión, por ejemplo, eliminar el usuario del estado.
     setUser(null);
   };
 
