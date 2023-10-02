@@ -12,7 +12,6 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Login/>
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<List />}></Route>

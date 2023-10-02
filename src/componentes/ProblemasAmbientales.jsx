@@ -108,9 +108,7 @@ function ProblemasAmbientales() {
     backgroundImage.onload = function () {
       const canvas = document.createElement('canvas');
       canvas.width = backgroundImage.width;
-      console.log(canvas.width);
       canvas.height = backgroundImage.height;
-      console.log(canvas.height);
 
       const context = canvas.getContext('2d');
       context.drawImage(backgroundImage, 0, 0, backgroundImage.width, backgroundImage.height);
